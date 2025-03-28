@@ -5,7 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import { Mic, MicOff } from 'lucide-react';
-import Notification from './components/Notification';
+import Notification from './components/notification';
 import PropTypes from 'prop-types';
 
 const socket = io(process.env.REACT_APP_BACKEND_URL || 'http://localhost:5000');
@@ -136,5 +136,4 @@ function App() {
 
 export default App;
 
-// Environment variable
-REACT_APP_BACKEND_URL=https://your-production-backend.com
+// Ensure the environment variable is set in a .env file
